@@ -16,7 +16,7 @@ import TrainersSection from '../components/TrainersSection';
 import MembershipSection from '../components/MembershipSection';
 import FooterSection from '../components/FooterSection';
 import NavigationBar from '../components/NavigationBar';
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 
 export default function HomePage() {
   return (
