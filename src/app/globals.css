@@ -18,6 +18,16 @@
   --neumorphic-text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
   --glass-border: rgba(255, 255, 255, 0.3);
   --animation-speed: 0.3s;
+
+  --glass-bg: rgba(255, 255, 255, 0.25);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  --glass-blur: 10px;
+  --.neumorphic-card: background: var(--neumorphic-bg); box-shadow: 7px 7px 14px var(--neumorphic-shadow-dark), -7px -7px 14px var(--neumorphic-shadow-light); border-radius: 16px;;
+  --.glassmorphism-card: background: var(--glass-bg); backdrop-filter: blur(var(--glass-blur)); -webkit-backdrop-filter: blur(var(--glass-blur)); border: 1px solid var(--glass-border); box-shadow: var(--glass-shadow);;
+  --.neumorphic-button: background: linear-gradient(145deg, #f0f0f0, #e6e6e6); box-shadow: 5px 5px 10px var(--neumorphic-shadow-dark), -5px -5px 10px var(--neumorphic-shadow-light); border: none; transition: all 0.3s ease;;
+  --.neumorphic-button:hover: box-shadow: 3px 3px 6px var(--neumorphic-shadow-dark), -3px -3px 6px var(--neumorphic-shadow-light);;
+  --.neumorphic-button:active: box-shadow: inset 3px 3px 6px var(--neumorphic-shadow-dark), inset -3px -3px 6px var(--neumorphic-shadow-light);;
+  --.glassmorphism-button: background: var(--glass-bg); backdrop-filter: blur(var(--glass-blur)); -webkit-backdrop-filter: blur(var(--glass-blur)); border: 1px solid var(--glass-border); box-shadow: var(--glass-shadow);;
 }
 
 html {
