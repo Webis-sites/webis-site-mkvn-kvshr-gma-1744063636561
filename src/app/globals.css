@@ -38,6 +38,12 @@
 
   --neumorphic-shadow-pressed: inset 4px 4px 8px rgba(174, 174, 192, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
   --card-transition: 0.3s ease-in-out all;
+
+  --card-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
+  --card-inset-shadow: inset 4px 4px 8px #d1d9e6, inset -4px -4px 8px #ffffff;
+  --card-border: 1px solid rgba(255, 255, 255, 0.2);
+  --card-radius: 16px;
+  --transition-speed: 0.3s;
 }
 
 html {
