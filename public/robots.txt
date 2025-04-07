@@ -1,0 +1,6 @@
+# robots.txt for מכון כושר גמא
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://מכון-כושר-גמא.com/sitemap.xml
