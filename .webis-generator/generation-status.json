@@ -1,8 +1,11 @@
 {
-  "projectName": "מכון-כושר-גמא-6227",
-  "businessName": "מכון כושר גמא",
-  "created": "2025-04-07T22:50:27.928Z",
-  "status": "initialized",
-  "progress": 0,
-  "components": []
+  "timestamp": "2025-04-07T22:50:53.883Z",
+  "status": {
+    "totalComponents": 0,
+    "completedComponents": 0,
+    "failedComponents": 0,
+    "progress": 0
+  },
+  "components": [],
+  "repoName": "webis-site-mkvn-kvshr-gma-1744063636561"
 }
