@@ -35,6 +35,9 @@
   --neumorphic-shadow-hover: 12px 12px 20px rgba(174, 174, 192, 0.5), -12px -12px 20px rgba(255, 255, 255, 0.9), inset 1px 1px 1px rgba(255, 255, 255, 0.8);
   --icon-bg: linear-gradient(145deg, rgba(150, 206, 180, 0.8), rgba(255, 238, 173, 0.4));
   --icon-shadow: 4px 4px 8px rgba(174, 174, 192, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.7);
+
+  --neumorphic-shadow-pressed: inset 4px 4px 8px rgba(174, 174, 192, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+  --card-transition: 0.3s ease-in-out all;
 }
 
 html {
