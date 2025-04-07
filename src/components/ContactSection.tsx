@@ -2,8 +2,6 @@
 
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
 import { useForm } from 'react-hook-form';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
@@ -260,22 +258,7 @@ const ContactSection: React.FC = () => {
             </div>
             
             <div className="neumorphic-card glassmorphism p-2 rounded-2xl overflow-hidden h-[300px] md:h-[350px]">
-              <MapContainer 
-                center={position} 
-                zoom={15} 
-                style={{ height: '100%', width: '100%', borderRadius: '0.75rem' }}
-                scrollWheelZoom={false}
-              >
-                <TileLayer
-                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                <Marker position={position} icon={markerIcon}>
-                  <Popup>
-                    מכון כושר גמא <br /> רחוב הכושר 123, תל אביב
-                  </Popup>
-                </Marker>
-              </MapContainer>
+              
             </div>
           </motion.div>
         </div>
