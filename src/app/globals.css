@@ -8,6 +8,16 @@
   --background-end-rgb: 255, 255, 255;
   --primary-color: #FFEEAD;
   --secondary-color: #96CEB4;
+
+  --card-blur: 10px;
+  --card-opacity: 0.8;
+  --neumorphic-light: #ffffff;
+  --neumorphic-shadow-dark: rgba(163, 177, 198, 0.5);
+  --neumorphic-shadow-light: rgba(255, 255, 255, 0.8);
+  --neumorphic-bg: #FFEEAD;
+  --neumorphic-text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --animation-speed: 0.3s;
 }
 
 html {
