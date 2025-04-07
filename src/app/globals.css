@@ -60,6 +60,11 @@
   --trainer-card-height: 450px;
   --trainer-image-height: 220px;
   --animation-duration: 0.3s;
+
+  --card-shadow-inset: inset 8px 8px 16px #d1d9e6, inset -8px -8px 16px #ffffff;
+  --card-shadow-inset-dark: inset 8px 8px 16px rgba(0, 0, 0, 0.2), inset -8px -8px 16px rgba(255, 255, 255, 0.05);
+  --glass-background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  --glass-background-dark: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.2));
 }
 
 html {
