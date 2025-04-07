@@ -15,6 +15,7 @@ import ScheduleSection from '../components/ScheduleSection';
 import TrainersSection from '../components/TrainersSection';
 import MembershipSection from '../components/MembershipSection';
 import FooterSection from '../components/FooterSection';
+import NavigationBar from '../components/NavigationBar';
 
 export default function HomePage() {
   return (
@@ -35,6 +36,7 @@ export default function HomePage() {
     <TrainersSection />
     <MembershipSection />
     <FooterSection />
+    <NavigationBar />
   </main>
       
       <footer className="py-6 bg-gray-100 dark:bg-gray-800">
