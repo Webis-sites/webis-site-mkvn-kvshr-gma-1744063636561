@@ -2,7 +2,6 @@
 
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { useForm } from 'react-hook-form';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 // Types for form data
@@ -14,7 +13,6 @@ type FormData = {
 };
 
 const ContactSection: React.FC = () => {
-  const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const formRef = useRef<HTMLFormElement>(null);
@@ -32,7 +30,6 @@ const ContactSection: React.FC = () => {
       // Success handling
       console.log('Form submitted:', data);
       setSubmitStatus('success');
-      reset();
       
       // Reset success message after 5 seconds
       setTimeout(() => {
@@ -74,7 +71,7 @@ const ContactSection: React.FC = () => {
             <div className="neumorphic-card glassmorphism p-8 rounded-2xl">
               <h3 className="text-2xl font-semibold mb-6 text-primary-700">השאירו פרטים ונחזור אליכם</h3>
               
-              <form ref={formRef} onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+              <form ref={formRef} onSubmit={() => {}} className="space-y-6">
                 <div className="form-group">
                   <label htmlFor="name" className="block text-sm font-medium mb-2 text-primary-700">
                     שם מלא <span className="text-red-500">*</span>
@@ -86,13 +83,9 @@ const ContactSection: React.FC = () => {
                     <input
                       id="name"
                       type="text"
-                      className={`neumorphic-input glassmorphism-input w-full p-3 rounded-lg bg-white/40 backdrop-blur-sm border ${errors.name ? 'border-red-500' : 'border-primary-200'} focus:border-primary-500 focus:outline-none transition-all duration-300`}
+                      className={`neumorphic-input glassmorphism-input w-full p-3 rounded-lg bg-white/40 backdrop-blur-sm border focus:border-primary-500 focus:outline-none transition-all duration-300`}
                       placeholder="הכנס את שמך המלא"
-                      {...register('name', { required: 'שדה חובה' })}
                     />
-                    {errors.name && (
-                      <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
-                    )}
                   </motion.div>
                 </div>
                 
@@ -107,19 +100,9 @@ const ContactSection: React.FC = () => {
                     <input
                       id="phone"
                       type="tel"
-                      className={`neumorphic-input glassmorphism-input w-full p-3 rounded-lg bg-white/40 backdrop-blur-sm border ${errors.phone ? 'border-red-500' : 'border-primary-200'} focus:border-primary-500 focus:outline-none transition-all duration-300`}
+                      className={`neumorphic-input glassmorphism-input w-full p-3 rounded-lg bg-white/40 backdrop-blur-sm border focus:border-primary-500 focus:outline-none transition-all duration-300`}
                       placeholder="הכנס מספר טלפון"
-                      {...register('phone', { 
-                        required: 'שדה חובה',
-                        pattern: {
-                          value: /^[0-9]{9,10}$/,
-                          message: 'מספר טלפון לא תקין'
-                        }
-                      })}
                     />
-                    {errors.phone && (
-                      <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>
-                    )}
                   </motion.div>
                 </div>
                 
@@ -134,19 +117,9 @@ const ContactSection: React.FC = () => {
                     <input
                       id="email"
                       type="email"
-                      className={`neumorphic-input glassmorphism-input w-full p-3 rounded-lg bg-white/40 backdrop-blur-sm border ${errors.email ? 'border-red-500' : 'border-primary-200'} focus:border-primary-500 focus:outline-none transition-all duration-300`}
+                      className={`neumorphic-input glassmorphism-input w-full p-3 rounded-lg bg-white/40 backdrop-blur-sm border focus:border-primary-500 focus:outline-none transition-all duration-300`}
                       placeholder="הכנס כתובת אימייל"
-                      {...register('email', { 
-                        required: 'שדה חובה',
-                        pattern: {
-                          value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                          message: 'כתובת אימייל לא תקינה'
-                        }
-                      })}
                     />
-                    {errors.email && (
-                      <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
-                    )}
                   </motion.div>
                 </div>
                 
@@ -161,13 +134,9 @@ const ContactSection: React.FC = () => {
                     <textarea
                       id="message"
                       rows={4}
-                      className={`neumorphic-input glassmorphism-input w-full p-3 rounded-lg bg-white/40 backdrop-blur-sm border ${errors.message ? 'border-red-500' : 'border-primary-200'} focus:border-primary-500 focus:outline-none transition-all duration-300`}
+                      className={`neumorphic-input glassmorphism-input w-full p-3 rounded-lg bg-white/40 backdrop-blur-sm border focus:border-primary-500 focus:outline-none transition-all duration-300`}
                       placeholder="כתוב את הודעתך כאן..."
-                      {...register('message', { required: 'שדה חובה' })}
                     ></textarea>
-                    {errors.message && (
-                      <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
-                    )}
                   </motion.div>
                 </div>
                 
