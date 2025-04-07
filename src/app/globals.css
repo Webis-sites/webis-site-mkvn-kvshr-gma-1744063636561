@@ -28,6 +28,13 @@
   --.neumorphic-button:hover: box-shadow: 3px 3px 6px var(--neumorphic-shadow-dark), -3px -3px 6px var(--neumorphic-shadow-light);;
   --.neumorphic-button:active: box-shadow: inset 3px 3px 6px var(--neumorphic-shadow-dark), inset -3px -3px 6px var(--neumorphic-shadow-light);;
   --.glassmorphism-button: background: var(--glass-bg); backdrop-filter: blur(var(--glass-blur)); -webkit-backdrop-filter: blur(var(--glass-blur)); border: 1px solid var(--glass-border); box-shadow: var(--glass-shadow);;
+
+  --bg-color: #f0f0f3;
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --neumorphic-shadow: 8px 8px 16px rgba(174, 174, 192, 0.4), -8px -8px 16px rgba(255, 255, 255, 0.8), inset 1px 1px 1px rgba(255, 255, 255, 0.8);
+  --neumorphic-shadow-hover: 12px 12px 20px rgba(174, 174, 192, 0.5), -12px -12px 20px rgba(255, 255, 255, 0.9), inset 1px 1px 1px rgba(255, 255, 255, 0.8);
+  --icon-bg: linear-gradient(145deg, rgba(150, 206, 180, 0.8), rgba(255, 238, 173, 0.4));
+  --icon-shadow: 4px 4px 8px rgba(174, 174, 192, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.7);
 }
 
 html {
