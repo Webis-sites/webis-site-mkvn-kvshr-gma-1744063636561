@@ -13,6 +13,7 @@ import FeaturesSection from '../components/FeaturesSection';
 import CTASection from '../components/CTASection';
 import ScheduleSection from '../components/ScheduleSection';
 import TrainersSection from '../components/TrainersSection';
+import MembershipSection from '../components/MembershipSection';
 
 export default function HomePage() {
   return (
@@ -31,6 +32,7 @@ export default function HomePage() {
     <CTASection />
     <ScheduleSection />
     <TrainersSection />
+    <MembershipSection />
   </main>
       
       <footer className="py-6 bg-gray-100 dark:bg-gray-800">
